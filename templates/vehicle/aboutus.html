@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+    .alert {
+      margin: 0px;
+    }
+
+    body {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        background-image: url('{% static "images/2.jpg" %}');
+        background-size: cover;
+        background-repeat: no-repeat;
+      } 
+
+    .h { font-size:80px;font-family:Times New Roman;font-weight:bold; font-style:italic; }
+
+    .hh { font-size:40px;font-family:Lucida Console; }
+
+    .hhh { font-size:40px;font-family:Lucida Console; }
+
+    .hhhh { font-size:35px;font-family:Times New Roman;font-weight:bold;font-style:italic;color:brown; }
+  
+  </style>
+
+  <title></title>
+</head>
+
+<body>
+
+  {% include "vehicle/navbar.html" %}
+  <br><br>
+  <center>
+  <br>
+    <h1 class="h">Developers</h1>
+  
+  <div>
+    
+	<br><br><br>
+  	
+	<h3 class="hhhh">Bhavesh Mahajan(35)<br> Prashant Nane (38)<br> Prajyot Pawar (52)</h3><h3>Batch of TE pursuing Computer Engineering</h3><h3>at</h3><h3 class="hhh">Smt. Indira Gandhi College of Engineering</h3>
+	<br>
+   
+
+	<br><br>
+    <h3> For any queries, you can mail us at 2019c39@sigce.edu.in</h3>
+ <br><br>
+ <p class="lead">
+      <a class="btn btn-primary btn-lg" href="/" role="button">BACK TO HOME</a>
+    </p>
+  </div>
+  </center>
+</body>
+
+</html>

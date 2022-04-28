@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+    body {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        background-image: url('{% static "images/2.jpg" %}');
+        background-size: cover;
+        background-repeat: no-repeat;
+      }  
+
+     .h { font-size:80px;font-family:Times New Roman;font-weight:bold; font-style:italic; }
+
+     .hh { font-size:40px;font-family:Lucida Console; }
+
+     .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+  </style>
+
+</head>
+
+<body>
+  <center>	
+  <br><br>
+  {% include "vehicle/navbar.html" %}
+  <br><br>
+  <div>
+    <h1 class="h">Hello</h1>
+    <p class="hh">Welcome to Vehicle Service Management</p>
+    <br>
+    <hr>
+    <p style="font-size:25px;font-family:Lucida Console;">You can access various features after Login.</p>
+    <p class="hh">
+      <a class="button" href="customersignup" role="button">Create Your Account</a>
+      <a class="button" href="customerlogin" role="button">Login</a>
+    </p>
+  </div>
+  </center>
+</body>
+
+</html>
